@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Iron Comments </title>
-    <link rel="stylesheet" type="text" href="/iron-comments/styles/style.css">
-</head>
-<body>
-    <form id="form-container">
-        <div class="formSection">
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-        </div>
-        <div class="formSection">
-            <label for="email">Email:</label>
-            <input type="email" id="email">
-        </div>
-        <div class="formSection">
-            <label for="comment">Comment</label>
-            <textarea id="comment" name="comment" rows="4" cols="18"></textarea>
-        <div>
-            <label for="updates"><i>Receive email updates?</i></label>
-            <input type="checkbox" required id="updates">
-        </div>
-        <input class="button" type="submit" value="Submit"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iron Comments</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+  </head>
+  <body>
+    <form id="form-box">
+      <fieldset>
+        <label for="name">Name:</label>
+        <input type="text" class="name" name="name"/>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"/>
+        <label for="comment">Comment:</label>
+        <textarea
+          name="comment"
+          id="comment"
+          cols="19"
+          rows="10"
+        ></textarea>
+        <label for="checkbox">Recieve email updates?</label>
+        <input type="checkbox" name="update"/>
+        <input class="btn" type="submit" value="Submit" />
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
